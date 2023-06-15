@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.pagination{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+
+.pagination .page-num{
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.pagination .page-num:hover{
+  background-color: #5AB1BB;
+  color: #ebeaea;
+}
+
+.pagination .page-num:active{
+  background-color: #5AB1BB;
+  color: #ebeaea;
+}
+
+.homePage{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1px;
+}
+
+.card{
+  /* width: 315px; */
+  margin: 6px;
+  border: 1px solid #ebeaea;
+}
+
+.info{
+  max-height: 85px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .homePage{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1px;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .homePage{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1px;
+  } 
+}
